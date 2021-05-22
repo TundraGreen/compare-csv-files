@@ -15,13 +15,13 @@ def main
   new_file_path = params['new_file_path']
   old_table = read_data(old_file_path)
   new_table = read_data(new_file_path)
-  ignore 
+  ignore
   print "\n"
   print "Running —#{request_type}— difference\n"
   case request_type
   when 'fields'
     difference_fields(old_file_path, new_file_path, old_table, new_table, ignore, key_name)
-  when 'records'  
+  when 'records'
     difference_records(old_file_path, new_file_path, old_table, new_table, key_name)
   else
     print_usage

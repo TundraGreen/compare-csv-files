@@ -4,7 +4,7 @@
 
     Author: William H. Prescott
     Date: 2021-05-21
-    Version: 1.0
+    Version: 1.0.1
 
     Usage: ruby compare_csv_files.rb [options]
 
