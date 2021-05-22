@@ -1,7 +1,6 @@
 # compare_csv_files.rb
-# © William Prescott
-# process_da.rb
-# 2020-06-29
+# © 2021 William Prescott
+# 2021-05-21
 
 require 'csv'
 
@@ -149,7 +148,7 @@ def process_command_line_arguments
   request_type = request_type.nil? ? 'fields' : request_type
   key_name = key_name.nil? ? 'id' : key_name
   ignore = ignore.nil? ? [] : ignore
- return {
+  return {
     'request_type' => request_type,
     'key_name' => key_name,
     'ignore' => ignore,
