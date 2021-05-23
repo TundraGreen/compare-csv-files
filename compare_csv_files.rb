@@ -92,8 +92,6 @@ def print_usage
   print "  -k, --key_name - name of column containing a unique id (required for records, defaults to 'id')\n"
   print "\n"
   print "Note 0: files must have a header row including the name of the key field.\n"
-  print "Note 1: if -r and -f are both specified the last one is used.\n"
-  print "Note 2: for -f compare, the two files must contain the same number of records in the same order.\n"
   print "\n"
   print "Examples: ruby compare_csv_files.rb [options]\n"
   print "ruby compare_csv_files.rb -1 test1.csv -2 test2.csv -f -i 'updated_at,primary_county' -k id\n"
