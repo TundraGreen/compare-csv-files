@@ -40,7 +40,7 @@ def difference_fields(old_file_path, new_file_path, old_table, new_table, ignore
   common_columns.each do |column|
     next if ignore.include?(column)
     common_rows.each do |row|
-      if old_hash[row][column] != new_hash[row][column]
+      if old_hash[row][column].to_s.downcase != new_hash[row][column].to_s.downcase
         print "record: #{row}, field: #{column}\n"
         print "  old_value: ->#{old_hash[row][column]}<-\n"
         print "  new_value: ->#{new_hash[row][column]}<-\n"
