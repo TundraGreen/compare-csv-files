@@ -18,6 +18,5 @@
     Note 0: files must have a header row including the name of the key field.
 
     Examples: ruby compare_csv_files.rb [options]
-    ruby compare_csv_files.rb -1 test1.csv -2 test2.csv -f -i 'updated_at,primary_county' -k id
-    ruby compare_csv_files.rb -1 test1.csv -2 test2.csv -f
-    ruby compare_csv_files.rb -1 test3.csv -2 test2.csv -r -k id
+    ruby compare_csv_files.rb -1 test1.csv -2 test2.csv -i 'updated_at,primary_county' -k id
+    ruby compare_csv_files.rb -1 test1.csv -2 test3.csv -i 'updated_at,primary_county' -k id
